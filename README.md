@@ -1,38 +1,28 @@
-# Capstone B — TeleConnect: Customer Churn Analysis
+# Teleconnect: Customer Churn Analysis & Retention Intelligence
 
-**Naresh IT · Python for Full Stack Data Science with AI & Generative AI · Lead Trainer: Ajit Byru**
+An end-to-end data analytics and business intelligence capstone project focused on analyzing customer demographics, account characteristics, service subscriptions, and usage patterns to uncover key churn drivers and recommend proactive customer retention strategies.
 
-You are the analyst the VP Customer hired to answer one question: who is leaving, and what do they have in common?
+---
 
-## Files
-| Path | What it is |
-|---|---|
-| `customers_2025.csv` | ~7,000 customers, 14 columns — deliberately messy |
-| `teleconnect_churn_student.ipynb` | Your notebook: cleaning log, Q1–Q6, the brief |
+## Project Overview
 
-## Definition of done
-- [ ] Data-Quality Log with 7 rows: problem, rows affected, fix, *why this fix*
-- [ ] Clean shape, churn rate and mean tenure match the acceptance numbers given in class
-- [ ] Q1–Q5 answered with a chart and a one-sentence reading each; Q6 is your own
-- [ ] Q2 reports effect size *and* a test; Q3 uses a contingency table *and* a test
-- [ ] One-page churn brief (250–350 words) a VP can read without the notebook
-- [ ] Notebook runs top-to-bottom in a fresh kernel; five slides; two-minute pitch
+- **Exploratory Data Analysis (EDA)**: Investigated customer attributes, tenure distribution, monthly charges, and contract types to identify churn correlations.
+- **Data Quality & Preprocessing**: Cleaned inconsistent values, handled missing data, and standardized customer demographic and account records.
+- **Key Churn Insights**:
+  - Identified high churn concentrations among month-to-month contracts and early-tenure cohorts.
+  - Analyzed the impact of pricing sensitivity and service add-ons (tech support, online security) on customer loyalty.
+  - Calculated customer lifetime value (CLV) impact and potential revenue loss from high-risk segments.
+- **Business Recommendations**: Proposed targeted retention playbooks, multi-month contract migration incentives, and early intervention triggers for high-churn customer profiles.
 
-## Rules
-No `sklearn`, no models. AI assistants for syntax and error messages only — the viva tests conclusions.
+---
 
-## Grading (20)
-Data-quality log 4 · Guided questions 6 · Own question 3 · The brief 3 · Reproducibility 2 · Viva & pitch 2
+## Repository Structure
 
-## Interview questions you will be asked
-1. What is the churn rate, and why is that number alone not enough?
-2. Support calls differ between churners and stayers — cause, effect, or neither? How would you find out?
-3. Which test did you use for a categorical feature, and what was its null hypothesis?
-4. Your riskiest segment is small. Is it still where the budget should go?
-5. What would you need to turn this analysis into a prediction?
+```text
+├── data/                 # Raw and processed customer churn datasets
+├── notebooks/            # Exploratory analysis and modeling notebooks
+├── src/                  # Helper utilities, processing, and visualization scripts
+├── README.md             # Project documentation
+└── .gitignore            # Git exclusion rules
 
-## Run
-```bash
-pip install numpy pandas matplotlib seaborn scipy
-jupyter notebook teleconnect_churn_student.ipynb
-```
+
