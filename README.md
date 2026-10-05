@@ -81,40 +81,6 @@ One important high-risk group identified in the analysis is customers who have:
 
 This group shows a significantly higher churn rate compared with the overall customer base.
 
-## How to Run the Project
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-```
-
-### 2. Open the project folder
-
-```bash
-cd teleconnect-capstone-starter
-```
-
-### 3. Install the required packages
-
-```bash
-pip install pandas numpy jupyter
-```
-
-### 4. Run the notebook
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```text
-teleconnect_churn_student.ipynb
-```
-
-Run the notebook cells from top to bottom.
-
 ## Business Insights
 
 The analysis helps TeleConnect understand:
